@@ -1,0 +1,51 @@
+For graph 41
+1 - 2 : 143.03
+2 - 5 : 108.26
+1 - 3 : 79.98
+2 - 4 : 71.77
+
+Using topology generator: Copy as it is from input graph
+Topology: [1=[2, 3], 2=[1, 5, 4], 3=[1], 4=[2], 5=[2]]
+Number of Links:- 4
+Communication cost: 401.0
+Link utilization graph: {1={2=1, 3=1}, 2={1=1, 4=1, 5=1}, 3={1=1}, 4={2=1}, 5={2=1}}
+Average link utilization: 1.0
+Non-fault tolerant links: 1 - 2;  1 - 3;  2 - 5;  2 - 4;  
+Link fault tolerance: 0.0%
+
+Using topology generator: Basic non-fault tolerant
+Topology: [1=[2, 3], 2=[1, 5, 4], 3=[1], 4=[2], 5=[2]]
+Number of Links:- 4
+Communication cost: 401.0
+Link utilization graph: {1={2=1, 3=1}, 2={1=1, 4=1, 5=1}, 3={1=1}, 4={2=1}, 5={2=1}}
+Average link utilization: 1.0
+Non-fault tolerant links: 1 - 2;  1 - 3;  2 - 5;  2 - 4;  
+Link fault tolerance: 0.0%
+
+Using topology generator: poorest neighbour - link fault tolerant, post fix, port util, no port limit, bandwidth priority
+Topology: [1=[2, 3, 5, 4], 2=[1, 5, 4], 3=[1, 5], 4=[2, 1], 5=[2, 1, 3]]
+Number of Links:- 7
+Communication cost: 401.0
+Link utilization graph: {1={2=1, 3=1, 4=0, 5=0}, 2={1=1, 4=1, 5=1}, 3={1=1, 5=0}, 4={1=0, 2=1}, 5={1=0, 2=1, 3=0}}
+Average link utilization: 0.5714285969734192
+Non-fault tolerant links: 
+Link fault tolerance: 100.0%
+
+Using topology generator: poorest neighbour - pre fix, port util, no port limit, bandwidth priority
+Topology: [1=[2, 3, 5, 4], 2=[1, 5, 4], 3=[1, 5], 4=[2, 1], 5=[2, 1, 3]]
+Number of Links:- 7
+Communication cost: 401.0
+Link utilization graph: {1={2=1, 3=1, 4=0, 5=0}, 2={1=1, 4=1, 5=1}, 3={1=1, 5=0}, 4={1=0, 2=1}, 5={1=0, 2=1, 3=0}}
+Average link utilization: 0.5714285969734192
+Non-fault tolerant links: 
+Link fault tolerance: 100.0%
+
+Using topology generator: De Bruijn's sequence
+Topology: [1=[2, 3], 2=[1, 3, 4], 3=[2, 5, 4, 1], 4=[2, 5, 3], 5=[3, 4]]
+Number of Links:- 7
+Communication cost: 509.0
+Link utilization graph: {1={2=2, 3=2}, 2={1=2, 3=0, 4=2}, 3={1=2, 2=0, 4=0, 5=1}, 4={2=2, 3=0, 5=1}, 5={3=1, 4=1}}
+Average link utilization: 1.1428571939468384
+Non-fault tolerant links: 
+Link fault tolerance: 100.0%
+

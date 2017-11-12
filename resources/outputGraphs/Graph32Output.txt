@@ -1,0 +1,51 @@
+For graph 32
+1 - 2 : 100.0
+2 - 4 : 80.0
+1 - 4 : 70.0
+2 - 3 : 40.0
+
+Using topology generator: Copy as it is from input graph
+Topology: [1=[2, 4], 2=[1, 4, 3], 3=[2], 4=[2, 1]]
+Number of Links:- 4
+Communication cost: 290.0
+Link utilization graph: {1={2=1, 4=1}, 2={1=1, 3=1, 4=1}, 3={2=1}, 4={1=1, 2=1}}
+Average link utilization: 1.0
+Non-fault tolerant links: 2 - 3;  
+Link fault tolerance: 75.0%
+
+Using topology generator: Basic non-fault tolerant
+Topology: [1=[2], 2=[1, 4, 3], 3=[2], 4=[2]]
+Number of Links:- 3
+Communication cost: 360.0
+Link utilization graph: {1={2=2}, 2={1=2, 3=1, 4=2}, 3={2=1}, 4={2=2}}
+Average link utilization: 1.6666666269302368
+Non-fault tolerant links: 1 - 2;  2 - 4;  2 - 3;  
+Link fault tolerance: 0.0%
+
+Using topology generator: poorest neighbour - link fault tolerant, post fix, port util, no port limit, bandwidth priority
+Topology: [1=[2, 4, 3], 2=[1, 4, 3], 3=[2, 1], 4=[2, 1]]
+Number of Links:- 5
+Communication cost: 290.0
+Link utilization graph: {1={2=1, 3=0, 4=1}, 2={1=1, 3=1, 4=1}, 3={1=0, 2=1}, 4={1=1, 2=1}}
+Average link utilization: 0.800000011920929
+Non-fault tolerant links: 
+Link fault tolerance: 100.0%
+
+Using topology generator: poorest neighbour - pre fix, port util, no port limit, bandwidth priority
+Topology: [1=[2, 4, 3], 2=[1, 4, 3], 3=[2, 1], 4=[2, 1]]
+Number of Links:- 5
+Communication cost: 290.0
+Link utilization graph: {1={2=1, 3=0, 4=1}, 2={1=1, 3=1, 4=1}, 3={1=0, 2=1}, 4={1=1, 2=1}}
+Average link utilization: 0.800000011920929
+Non-fault tolerant links: 
+Link fault tolerance: 100.0%
+
+Using topology generator: De Bruijn's sequence
+Topology: [1=[2, 3], 2=[1, 3, 4], 3=[2, 4, 1], 4=[2, 3]]
+Number of Links:- 5
+Communication cost: 360.0
+Link utilization graph: {1={2=2, 3=1}, 2={1=2, 3=1, 4=2}, 3={1=1, 2=1, 4=1}, 4={2=2, 3=1}}
+Average link utilization: 1.399999976158142
+Non-fault tolerant links: 
+Link fault tolerance: 100.0%
+
